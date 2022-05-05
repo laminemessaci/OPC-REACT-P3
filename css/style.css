@@ -34,18 +34,27 @@
     text-align: center;
   }
 
- 
-
+  .restaurant-card {
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 8px #999;
+  }
+  .restaurant-card__illustration {
+    position: relative;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 170px;
+  }
   .restaurant-card__illustration__picture {
     position: absolute;
     z-index: 1;
-    width: auto;
+    width: 100%;
     height: 170px;
   }
-
   .restaurant-card__illustration__picture img {
     border-radius: 20px 20px 0 0;
-   width: ;
+    width: 100%;
     height: 170px;
   }
   
