@@ -110,3 +110,15 @@
     align-items: center;
     width: 50px;
   }
+
+  .menu-main-tag {
+    background-color: #F6F6F6;
+  }
+  
+  .hero {
+    height: 240px;
+  }
+  .hero > img {
+    width: 100%;
+    height: 240px;
+  }
