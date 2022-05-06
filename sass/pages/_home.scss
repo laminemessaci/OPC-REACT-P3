@@ -1,0 +1,191 @@
+.restaurant-card-link {
+    text-decoration: none;
+    color: $color-text-body;
+}
+
+.home-main-tag {
+    @include tablets-and-wider {
+        box-shadow: inset 0px 5px 10px -12px $color-text-body;
+    }
+    &__section {
+        background-color: $color-background-main-primary;
+        padding: 50px 20px;
+        &--centered {
+            text-align: center;
+        }
+        &--other-background {
+            background-color: $color-background-main-secondary;
+        }
+    }
+    > div {
+        display: flex;
+        flex-direction: column;
+        @include tablets-and-wider {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        > section {
+            @include tablets-and-wider {
+                width: 48%;
+                &:nth-child(2) {
+                    padding: 0 20px;
+                    box-shadow: inset 0px 5px 10px -12px $color-text-body;
+                }
+            }
+        }
+        &:nth-child(1) {
+            > section:nth-child(1) {
+                @include tablets-and-wider {
+                    background-color: $color-background-main-secondary;
+                }
+            } 
+        }
+    }
+}
+
+.restaurant-selection {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    &__location {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        box-shadow: inset 0px 5px 10px -12px $color-text-body;
+        padding: 20px 0;
+        background-color: darken($color-background-main-primary, 10%);
+        color: lighten($color-text-body, 20%);
+        i {
+            margin-right: 20px;
+        }
+        input {
+            background: darken($color-background-main-primary, 10%);
+            border: none;
+            width: 100px;
+        }
+    }
+    &__title {
+        font-family: 'Roboto', sans-serif;
+        margin: 50px 40px 20px 40px;
+    }
+    &__text {
+        margin: 0 30px 30px 30px;
+        color: lighten($color-text-body, 20%);
+    }
+}
+
+.website-instructions {
+    &__title {
+        font-family: 'Roboto', sans-serif;
+    }
+    &__list {
+        &__item {
+            margin: 0 0 20px 0;
+            border: none;
+            border-radius: 20px;
+            padding: 30px 50px;
+            width: 100%;
+            text-align: left;
+            background-color: $color-background-main-primary;
+            box-shadow: 1px 1px 8px $shadow-color;
+            span {
+                display: inline-block;
+                border-radius: 12px;
+                padding: 5px;
+                width: 24px;
+                height: 24px;
+                position: relative;
+                left: -60px;
+                background: $color-primary;
+                color: $color-text-footer;
+                text-align: center;
+            }
+            i {
+                margin-right: 20px;
+                color: $color-text-body;
+            }
+            &:hover {
+                background-color: darken($color-background-main-primary, 10%);
+                i {
+                    color: $color-primary;
+                }
+            }
+        }
+
+    }
+}
+
+.restaurants-section {
+    &__title {
+        font-family: 'Roboto', sans-serif;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        @include tablets-and-wider {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        > div {
+            @include tablets-and-wider {
+                width: 48%;
+            }
+            @include desktops-and-wider {
+                width: 31%;
+            }
+        }
+    }
+}
+
+.restaurant-card {
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 8px $shadow-color;
+    &__illustration {
+        position:relative;
+        border-radius: 20px 20px 0 0;
+        width: 100%;
+        height: 170px;
+        &__picture {
+            position:absolute;
+            z-index:1;
+            width: 100%;
+            height: 170px;
+            img {
+                border-radius: 20px 20px 0 0;
+                width: 100%;
+                height: 170px;
+            }
+        }
+        &__sticker {
+            position: absolute;
+            z-index:2;
+            top: 20px;
+            right: 20px;
+            width: 80px;
+            height: 30px;
+            background-color: $color-tertiary;
+            color: darken($color-tertiary, 40%);
+            text-align: center;
+            line-height: 30px;
+        }
+    }
+    > div {
+        display: flex;
+        justify-content: space-between;
+        border-radius: 0 0 20px 20px;
+        padding: 0 20px 10px 20px;
+        background-color: $color-background-main-secondary;
+    }
+    &__description {
+        flex: 1;
+        &__name {
+            font-family: 'Roboto', sans-serif;
+        }
+        &__location {}
+    }
+    &__like {
+    }
+}
