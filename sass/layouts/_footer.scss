@@ -1,0 +1,40 @@
+.footer {
+    padding: 20px;
+    background-color: $color-background-footer;
+    color: $color-text-footer;
+    &__title {
+        @include tablets-and-wider {
+            text-align: center;
+        }
+
+        font-family: "Shrikhand", cursive;
+    }
+    &__elements {
+        display: flex;
+        flex-direction: column;
+        @include tablets-and-wider {
+            flex-direction: row;
+            justify-content: space-between;
+            text-align: center;
+        }
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            margin-bottom: 5px;
+            @include tablets-and-wider {
+                width: 24%;
+            }
+            a {
+                text-decoration: none;
+                color: $color-text-footer;
+                i.fa-handshake {
+                    transform: rotate(-45deg);
+                }
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
