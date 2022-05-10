@@ -1,7 +1,10 @@
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     padding: 20px 0;
+            font-family: "Shrikhand", cursive;
+            font-size: 36px;
+      
     &__link {
         display: block;
         width: 32px;

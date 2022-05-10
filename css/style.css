@@ -1,7 +1,9 @@
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 20px 0;
+  font-family: "Shrikhand", cursive;
+  font-size: 36px;
 }
 .header__link {
   display: block;
@@ -65,6 +67,36 @@
 }
 .footer__elements li a:hover {
   text-decoration: underline;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFF;
+  color: #000;
+}
+
+img {
+  object-fit: cover;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+h1, h2, h3 {
+  font-family: "Shrikhand", cursive;
+}
+
+h1, h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 16px;
 }
 
 .restaurant-card-link {
