@@ -1,0 +1,171 @@
+.menu-main-tag {
+    background-color: $color-background-main-primary;
+}
+
+.hero {
+    height: 240px;
+    > img {
+        width: 100%;
+        height: 240px;
+    }
+}
+
+.menu {
+    position: relative;
+    top: -40px;
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        margin-bottom: 20px;
+        border-radius: 40px 40px 0 0;
+        padding: 20px 20px 0 20px;
+        background-color: $color-background-main-primary;
+        line-height: 40px;
+        @include tablets-and-wider {
+            padding-left: 120px;
+            padding-right: 120px;
+        }
+        @include desktops-and-wider {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        > h1 {
+            flex: 1;
+            margin: 0;
+        }
+    }
+    &__content {
+        @include tablets-and-wider {
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+        @include desktops-and-wider {
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    &__button-container {
+        @include tablets-and-wider {
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+        @include desktops-and-wider {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
+
+.plates-group {
+    margin-bottom: 40px;
+    padding: 0;
+    @include desktops-and-wider {
+        width: 33%;
+    }
+    &__title {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin: 0;
+        margin-bottom: 5px;
+        padding: 0 20px;
+    }
+   &__title-underlining {
+        margin: 0 20px 10px 20px;
+        border: 1px solid $color-tertiary;
+        width: 10%;
+    }
+    &__container {
+        overflow: hidden;
+    }
+    &__content {
+        padding: 10px 20px 0 20px;
+        animation: menu-appearance .5s both;
+    }
+}
+
+.appetizers .plates-group__content {
+    animation-delay: 0.5s;
+}
+.main-courses .plates-group__content {
+    animation-delay: 1.5s;
+}
+.desserts .plates-group__content {
+    animation-delay: 2.5s;
+}
+
+.menu-item {
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: $color-background-main-secondary;
+    box-shadow: 1px 1px 8px $shadow-color;
+    overflow: hidden;
+    &:hover {
+        cursor: pointer;
+        .menu-item {
+           
+            &__checked {
+                width: 60px;
+                i {
+                    transform: translateX(0) rotate(0deg);
+                }
+            }
+        }
+    }
+    &__description {
+        flex: 1;
+        min-width: 20px;
+        > div {
+            display: flex;
+        }
+        &__name {
+            font-family: 'Roboto', sans-serif;
+            margin: 0 0 14px 0;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        &__additional-information {
+            margin: 0;
+            flex: 1;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        &__price {
+            margin: 0;
+            width: 30px;
+            text-align: right;
+            font-weight: bold;
+        }
+    }
+    &__checked {
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        width: 0;
+        background-color: $color-tertiary;
+        color: $color-background-main-primary;
+        margin: -20px -20px -20px 20px;
+        border-radius: 0 20px 20px 0;
+        transition: width 300ms ease-in-out;
+        i {
+            display: inline-block;
+            font-size: nth($font-size, 2);
+            transform: translateX(60px) rotate(-360deg);
+            transition: transform 500ms ease-in-out;
+        }
+    }
+}
+
+.order-button {
+    padding-left: 50px;
+    padding-right: 50px;
+}
