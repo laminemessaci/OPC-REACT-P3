@@ -1,0 +1,27 @@
+@keyframes menu-appearance {
+    from {
+        transform: translateY(-110%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+@keyframes rotating-loader {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loader-stop {
+    from {
+        opacity: 100%;
+    }
+    to {
+        display: none;
+        opacity: 0%;
+        z-index: 0;
+    }
+}

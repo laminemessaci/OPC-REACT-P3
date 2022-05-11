@@ -1,47 +1,9 @@
-
-* {
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color: #FFF;
-    color: #000;
-  }
-  
-  img {
-    object-fit: cover;
-  }
-  
-  body {
-    font-family: "Roboto", sans-serif;
-    font-size: 14px;
-  }
-  
-  h1, h2, h3 {
-    font-family: "Shrikhand", cursive;
-  }
-  
-  h1, h2 {
-    font-size: 24px;
-  }
-  
-  h3 {
-    font-size: 16px;
-  }
-  
-
 .restaurant-card-link {
     text-decoration: none;
     color: $color-text-body;
 }
-.home-main-tag-container{
-  
-  
-    margin: auto;
-}
 
 .home-main-tag {
-  
     @include tablets-and-wider {
         box-shadow: inset 0px 5px 10px -12px $color-text-body;
     }
@@ -58,6 +20,7 @@
     > div {
         display: flex;
         flex-direction: column;
+        
         @include tablets-and-wider {
             flex-direction: row;
             justify-content:space-between;
@@ -227,3 +190,4 @@
     &__like {
     }
 }
+
