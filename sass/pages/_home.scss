@@ -34,8 +34,14 @@
     text-decoration: none;
     color: $color-text-body;
 }
+.home-main-tag-container{
+  
+  
+    margin: auto;
+}
 
 .home-main-tag {
+  
     @include tablets-and-wider {
         box-shadow: inset 0px 5px 10px -12px $color-text-body;
     }
@@ -54,7 +60,7 @@
         flex-direction: column;
         @include tablets-and-wider {
             flex-direction: row;
-            justify-content: space-around;
+            justify-content:space-between;
         }
         > section {
             @include tablets-and-wider {

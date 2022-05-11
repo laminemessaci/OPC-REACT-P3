@@ -9,7 +9,7 @@
     color: $color-text-footer;
     &:hover {
         background: linear-gradient(-10deg, darken($color-primary, 10%), darken($color-secondary, 10%));
-        box-shadow: 2px 2px 8px darken($shadow-color, 20%);
+        box-shadow: 2px 2px 8px darken($shadow-color, 30%);
         cursor: pointer;
     }
 }

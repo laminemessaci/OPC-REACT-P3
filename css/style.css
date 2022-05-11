@@ -1,3 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFF;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+img {
+  object-fit: cover;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+h1, h2, h3 {
+  font-family: "Shrikhand", cursive;
+}
+
+h1, h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+.header {
+  font-family: "Shrikhand", cursive;
+  font-size: 36px;
+}
+
+.footer__title {
+  font-family: "Shrikhand", cursive;
+}
+
 .button {
   display: flex;
   margin: 0 auto;
@@ -10,14 +51,14 @@
 }
 .button:hover {
   background: linear-gradient(-10deg, #782cd3, #ff46cc);
-  box-shadow: 2px 2px 8px #666666;
+  box-shadow: 2px 2px 8px #4d4d4d;
   cursor: pointer;
 }
 
 .header {
   display: flex;
   justify-content: center;
-  padding: 20px 0;
+  padding: 20px 0px;
   font-family: "Shrikhand", cursive;
   font-size: 36px;
 }
@@ -120,6 +161,10 @@ h3 {
   color: #000;
 }
 
+.home-main-tag-container {
+  margin: auto;
+}
+
 @media screen and (min-width: 768px) {
   .home-main-tag {
     box-shadow: inset 0px 5px 10px -12px #000;
@@ -142,7 +187,7 @@ h3 {
 @media screen and (min-width: 768px) {
   .home-main-tag > div {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 @media screen and (min-width: 768px) {
