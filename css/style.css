@@ -151,10 +151,13 @@ h3 {
   text-decoration: none;
   color: #FFF;
 }
-.footer__elements li a i.fa-handshake {
-  transform: rotate(-45deg);
+.footer__elements li a i.fa-handshake, .footer__elements li a i.fa-utensils {
+  animation: rotating-loader 3s linear infinite;
 }
-.footer__elements li a:hover {
+.footer__elements li a i.fa-handshake:hover, .footer__elements li a i.fa-utensils:hover {
+  animation: loader-stop 3s 1s;
+}
+.footer__elements li :hover {
   text-decoration: underline;
 }
 

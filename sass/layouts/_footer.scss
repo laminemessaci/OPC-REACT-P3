@@ -28,11 +28,15 @@
             a {
                 text-decoration: none;
                 color: $color-text-footer;
-                i.fa-handshake {
-                    transform: rotate(-45deg);
+                i.fa-handshake , i.fa-utensils {
+                    animation: rotating-loader 3s linear infinite;
+                    &:hover{
+                    animation: loader-stop 3s 1s;
+                  }
                 }
+
             }
-            a:hover {
+            :hover {
                 text-decoration: underline;
             }
         }
