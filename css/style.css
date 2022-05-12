@@ -6,6 +6,14 @@
     transform: translateY(0);
   }
 }
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
 @keyframes rotating-loader {
   from {
     transform: rotate(0deg);
@@ -16,12 +24,12 @@
 }
 @keyframes loader-stop {
   from {
-    opacity: 100%;
+    opacity: 90%;
   }
   to {
     display: none;
     opacity: 0%;
-    z-index: 0;
+    z-index: -1;
   }
 }
 * {
@@ -335,6 +343,26 @@ h3 {
 .restaurant-card__description__name {
   font-family: "Roboto", sans-serif;
 }
+.loader-container {
+  background-color: darkorchid;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  animation: loader-stop 3s 1s both;
+}
+
+.loader-content {
+  margin: 200px auto;
+  border: 20px solid #FF79DA;
+  border-top-color: #9356DC;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+  animation: rotating-loader 3s linear infinite;
+}
+
 .menu-main-tag {
   background-color: #F6F6F6;
 }

@@ -6,7 +6,11 @@
         transform: translateY(0);
     }
 }
-@keyframes rotating-loader {
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  @keyframes rotating-loader {
     from {
         transform: rotate(0deg);
     }
@@ -17,11 +21,11 @@
 
 @keyframes loader-stop {
     from {
-        opacity: 100%;
+        opacity: 90%;
     }
     to {
         display: none;
         opacity: 0%;
-        z-index: 0;
+        z-index: -1;
     }
 }
