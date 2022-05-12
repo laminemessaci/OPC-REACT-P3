@@ -1,0 +1,51 @@
+.button {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    border-radius: 50px;
+    padding: 20px;
+    background: linear-gradient(-10deg, $color-primary, $color-secondary);
+    box-shadow: 1px 1px 8px $shadow-color;
+    color: $color-text-footer;
+    &:hover {
+        background: linear-gradient(-10deg, darken($color-primary, 10%), darken($color-secondary, 10%));
+        box-shadow: 2px 2px 8px darken($shadow-color, 20%);
+        cursor: pointer;
+    }
+}
+
+.like-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    &:hover {
+        .like-icon--clicked {
+            opacity: 1;
+            z-index: 2;
+        }
+    }
+    .like-icon {
+        z-index: 0;
+        position: absolute;
+        background-color: $color-background-body;
+        color: $like-button-color;
+        font-size: nth($font-size, 1);
+        z-index: 0;
+        &--clicked {
+            z-index: -1;
+            background: linear-gradient($color-primary, $color-secondary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 0;
+            transition: opacity 500ms;
+        }
+        &--menu-page {
+            /*width: 50px;*/
+            background-color: $color-background-main-primary;
+        }
+        &--menu-page-clicked {
+        }
+    }
+}

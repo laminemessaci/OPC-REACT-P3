@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+justify-content:space-between;
+padding: 20px 0px;
+font-family: "Shrikhand", cursive;
+font-size: 36px;
+      
+    &__link {
+        display: block;
+        width: 32px;
+        text-decoration: none;
+        margin-left: 30px;
+        margin-right: 0;
+        &--other-side {
+            margin-left: 0;
+            margin-right: 30px;  
+        }
+        i {
+            color: $color-text-body;
+        }
+    }
+    &__title {
+        margin: 0;
+    }
+}
+
