@@ -1,3 +1,23 @@
+.loader-container {
+    background-color: $color-background-body;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    animation: loader-stop 3s 1s both;
+}
+  
+.loader-content {
+    margin: 200px auto;
+    border: 20px solid $color-secondary;
+    border-top-color:  $color-primary;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+    animation: rotating-loader 3s linear infinite;
+}
+
 .menu-main-tag {
     background-color: $color-background-main-primary;
 }
@@ -110,7 +130,20 @@
     &:hover {
         cursor: pointer;
         .menu-item {
-           
+            /*&__description {
+                > .menu-item__description {
+                    &__name {
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        overflow: hidden;
+                    }
+                    &__additional-information {
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        overflow: hidden;
+                    }
+                }
+            }*/
             &__checked {
                 width: 60px;
                 i {
@@ -155,7 +188,7 @@
         color: $color-background-main-primary;
         margin: -20px -20px -20px 20px;
         border-radius: 0 20px 20px 0;
-        transition: width 300ms ease-in-out;
+        transition: width 500ms ease-in-out;
         i {
             display: inline-block;
             font-size: nth($font-size, 2);
@@ -169,4 +202,3 @@
     padding-left: 50px;
     padding-right: 50px;
 }
-
