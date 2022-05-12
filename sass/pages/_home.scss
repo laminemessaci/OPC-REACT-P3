@@ -11,9 +11,9 @@
 }
 
 .loader-container {
-    background-color: #fff;
+     background-color:#000;
      width: 100%;
-     height: 100vh;
+     height: 5000px;
      position:fixed;
      z-index: 3;
      animation: loader-stop 3s 1s both;
@@ -173,7 +173,6 @@
         height: 170px;
         &__picture {
             position:absolute;
-            z-index:1;
             width: 100%;
             height: 170px;
             img {
@@ -184,7 +183,6 @@
         }
         &__sticker {
             position: absolute;
-            z-index:2;
             top: 20px;
             right: 20px;
             width: 80px;

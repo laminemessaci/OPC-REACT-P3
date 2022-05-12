@@ -96,7 +96,7 @@ h3 {
   background-color: #FFF;
   color: #000;
   font-size: 36px;
-  z-index: 1;
+  z-index: 0;
 }
 .like-button .like-icon--clicked {
   z-index: -1;
@@ -197,9 +197,9 @@ h3 {
 }
 
 .loader-container {
-  background-color: #fff;
+  background-color: #000;
   width: 100%;
-  height: 100vh;
+  height: 5000px;
   position: fixed;
   z-index: 3;
   animation: loader-stop 3s 1s both;
@@ -356,7 +356,6 @@ h3 {
 }
 .restaurant-card__illustration__picture {
   position: absolute;
-  z-index: 1;
   width: 100%;
   height: 170px;
 }
@@ -367,7 +366,6 @@ h3 {
 }
 .restaurant-card__illustration__sticker {
   position: absolute;
-  z-index: 2;
   top: 20px;
   right: 20px;
   width: 80px;
