@@ -1,13 +1,5 @@
-.loader-container {
-    background-image: url("../../images/stil-u2Lp8tXIcjw-unsplash.jpg");
-    width: 100%;
-    height: 100%;
-    position:absolute;
-    z-index: 3;
-    animation: loader-stop 3s 1s both;
-}
-  
 .loader-content {
+    display: flex;
     margin: 200px auto;
     border: 20px solid $color-secondary;
     border-top-color:  $color-primary;
@@ -17,6 +9,18 @@
     z-index: 1;
     animation: rotating-loader 3s linear infinite;
 }
+
+.loader-container {
+
+    background-color: black;
+     width: 100%;
+     height: 5000px;
+     position:fixed;
+     z-index: 3;
+     animation: loader-stop 3s 1s both;
+ }
+   
+ 
 .restaurant-card-link {
     text-decoration: none;
     color: $color-text-body;
