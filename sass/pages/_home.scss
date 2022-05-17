@@ -111,6 +111,20 @@
             text-align: left;
             background-color: $color-background-main-primary;
             box-shadow: 1px 1px 8px $shadow-color;
+            &__content{
+                display:flex;
+                flex-direction:row ;
+                align-items:center ;
+                &__text{
+                    flex: 1;
+                    padding: 0px;
+                    margin: 0px;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+            }
+           
             span {
                 display: inline-block;
                 border-radius: 12px;

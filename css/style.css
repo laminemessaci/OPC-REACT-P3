@@ -294,6 +294,19 @@ h3 {
   background-color: #F6F6F6;
   box-shadow: 1px 1px 8px #999;
 }
+.website-instructions__list__item__content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.website-instructions__list__item__content__text {
+  flex: 1;
+  padding: 0px;
+  margin: 0px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
 .website-instructions__list__item span {
   display: inline-block;
   border-radius: 12px;
@@ -532,22 +545,6 @@ h3 {
 }
 .menu-item:hover {
   cursor: pointer;
-}
-.menu-item:hover .menu-item {
-  /*&__description {
-      > .menu-item__description {
-          &__name {
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              overflow: hidden;
-          }
-          &__additional-information {
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              overflow: hidden;
-          }
-      }
-  }*/
 }
 .menu-item:hover .menu-item__checked {
   width: 60px;
