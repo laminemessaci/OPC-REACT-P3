@@ -130,20 +130,7 @@
     &:hover {
         cursor: pointer;
         .menu-item {
-            /*&__description {
-                > .menu-item__description {
-                    &__name {
-                        text-overflow: ellipsis;
-                        white-space: nowrap;
-                        overflow: hidden;
-                    }
-                    &__additional-information {
-                        text-overflow: ellipsis;
-                        white-space: nowrap;
-                        overflow: hidden;
-                    }
-                }
-            }*/
+        
             &__checked {
                 width: 60px;
                 i {
